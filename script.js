@@ -37,8 +37,6 @@ const switchPlayer = function () {
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
-
-// const newRoll = function () {
 btnRoll.addEventListener('click', function () {
   if (playing) {
     //1.Generating a random dice roll
@@ -59,8 +57,6 @@ btnRoll.addEventListener('click', function () {
     }
   }
 });
-// };
-// const holdNew = function () {
 btnHold.addEventListener('click', function () {
   if (playing) {
     scores[activePlayer] = scores[activePlayer] + currentScore;
@@ -78,5 +74,4 @@ btnHold.addEventListener('click', function () {
     } else switchPlayer();
   }
 });
-// };
 btnNew.addEventListener('click', initialRulls);
